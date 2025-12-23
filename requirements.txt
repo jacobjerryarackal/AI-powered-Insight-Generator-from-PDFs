@@ -1,6 +1,6 @@
 streamlit
 google-generativeai
-langchain
+langchain==0.3.27
 PyPDF2
 chromadb
 faiss-cpu
