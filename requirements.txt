@@ -2,6 +2,8 @@ streamlit
 langchain==0.3.27
 langchain-community==0.3.27
 PyPDF2
-chromadb
 faiss-cpu
+chromadb
+sentence-transformers
 langchain_google_genai
+langchain_groq
