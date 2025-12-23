@@ -50,6 +50,24 @@ It uses a **Retrieval-Augmented Generation (RAG)** approach powered by **Groq’
 
 ---
 
+## 🖼️ Screenshots
+
+### Logo
+![Home Page](assets/logo.png)
+
+### Home Page
+![Home Page](assets/home.png)
+
+### Upload PDFs
+![Upload PDFs](assets/upload.png)
+
+### AI Response
+![AI Response](assets/answer 1.png)
+![AI Response](assets/answer 2.png)
+![AI Response](assets/answer 3.png)
+
+---
+
 ### Support
 
 For issues, questions, or contributions, please refer to the GitHub repository issues section or submit a pull request.
@@ -59,6 +77,8 @@ For issues, questions, or contributions, please refer to the GitHub repository i
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Working
+
+Working link: https://ai-powered-insight-generator-from-pdfs-lycfxrx8axjq22e2xn4d9b.streamlit.app/
 
 Run the App Locally:
 
