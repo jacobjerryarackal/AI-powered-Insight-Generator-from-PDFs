@@ -1,51 +1,54 @@
+# SuperAI Document  
+### AI-powered Insight Generator from PDFs using Groq & LLaMA 3.3
 
+SuperAI Document is a powerful **Streamlit-based AI application** that allows users to upload PDF documents and ask natural language questions about their content.  
+It uses a **Retrieval-Augmented Generation (RAG)** approach powered by **Groq’s ultra-fast inference** and **Meta’s LLaMA 3.3 model** to deliver accurate, context-aware answers.
 
-# SuperAI Document: Your AI-powered Insight Generator from PDFs
+---
 
-SuperAI Document is a powerful Streamlit application designed to extract and analyze text from PDF documents, leveraging the advanced capabilities of Google's Generative AI, specifically the Gemini-PRO model. This tool uses a Retrieval-Augmented Generation (RAG) framework to offer precise, context-aware answers to user queries based on the content of uploaded documents.
+## 🚀 Features
 
-## Features
+- **Instant PDF Insights** – Upload one or multiple PDFs and get answers instantly
+- **RAG Architecture** – Combines vector search (FAISS) with LLM reasoning
+- **Groq + LLaMA 3.3** – Ultra-fast inference using Groq’s LPU
+- **Secure API Key Input** – API key is entered securely at runtime
+- **Modern UI** – Clean, dark-themed Streamlit interface
 
-- **Instant Insights**: Extracts and analyses text from uploaded PDF documents to provide instant insights.
-- **Retrieval-Augmented Generation**: Utilizes Google's Generative AI model Gemini-PRO for high-quality, contextually relevant answers.
-- **Secure API Key Input**: Ensures secure entry of Google API keys for accessing generative AI models.
+---
 
-## Getting Started
+## 🧠 How It Works (High Level)
+
+1. PDFs are uploaded by the user
+2. Text is extracted and split into chunks
+3. Embeddings are generated using Sentence Transformers
+4. FAISS stores the embeddings for similarity search
+5. Relevant context is retrieved and sent to **LLaMA 3.3 via Groq**
+6. The AI generates a precise answer based on the document content
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Streamlit  
+- **LLM**: LLaMA 3.3 (via Groq)  
+- **Vector Store**: FAISS  
+- **Embeddings**: Sentence Transformers  
+- **PDF Processing**: PyPDF2  
+- **Framework**: LangChain  
+
+---
+
+## ⚙️ Getting Started
 
 ### Prerequisites
 
-- Google API Key: Obtain a Google API key to interact with Google's Generative AI models. Visit [Google API Key Setup](https://makersuite.google.com/app/apikey) to get your key.
-- Streamlit: This application is built with Streamlit. Ensure you have Streamlit installed in your environment.
+- **Groq API Key**  
+  Get your free API key from:  
+  👉 https://console.groq.com/keys
 
-### Installation
+- **Python 3.10** (recommended for FAISS compatibility)
 
-Clone this repository or download the source code to your local machine. Navigate to the application directory and install the required Python packages:
-
-```bash
-pip install -r requirements.txt
-```
-
-### How to Use
-
-1. **Start the Application**: Launch the Streamlit application by running the command:
-    ```bash
-    streamlit run <path_to_script.py>
-    ```
-    Replace `<path_to_script.py>` with the path to the script file.
-
-2. **Enter Your Google API Key**: Securely enter your Google API key when prompted. This key enables the application to access Google's Generative AI models.
-
-3. **Upload PDF Documents**: You can upload one or multiple PDF documents. The application will analyze the content of these documents to respond to queries.
-
-4. **Ask Questions**: Once your documents are processed, you can ask any question related to the content of your uploaded documents.
-
-### Technical Overview
-
-- **PDF Processing**: Utilizes `PyPDF2` for extracting text from PDF documents.
-- **Text Chunking**: Employs the `RecursiveCharacterTextSplitter` from LangChain for dividing the extracted text into manageable chunks.
-- **Vector Store Creation**: Uses `FAISS` for creating a searchable vector store from text chunks.
-- **Answer Generation**: Leverages `ChatGoogleGenerativeAI` from LangChain for generating answers to user queries using the context provided by the uploaded documents.
-
+---
 
 ### Support
 
@@ -54,4 +57,16 @@ For issues, questions, or contributions, please refer to the GitHub repository i
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Working
+
+Run the App Locally:
+
+```bash
+streamlit run app.py
+
+
+
+
+
 
