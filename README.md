@@ -62,9 +62,9 @@ It uses a **Retrieval-Augmented Generation (RAG)** approach powered by **Groq’
 ![Upload PDFs](assets/upload.png)
 
 ### AI Response
-![AI Response](assets/answer 1.png)
-![AI Response](assets/answer 2.png)
-![AI Response](assets/answer 3.png)
+![AI Response](assets/answer1.png)
+![AI Response](assets/answer2.png)
+![AI Response](assets/answer3.png)
 
 ---
 
