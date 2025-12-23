@@ -50,16 +50,6 @@ It uses a **Retrieval-Augmented Generation (RAG)** approach powered by **Groq’
 
 ---
 
-### Working
-
-Run the App Locally:
-
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-
-
-
 ### Support
 
 For issues, questions, or contributions, please refer to the GitHub repository issues section or submit a pull request.
@@ -67,4 +57,16 @@ For issues, questions, or contributions, please refer to the GitHub repository i
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Working
+
+Run the App Locally:
+
+```bash
+streamlit run app.py
+
+
+
+
+
 
